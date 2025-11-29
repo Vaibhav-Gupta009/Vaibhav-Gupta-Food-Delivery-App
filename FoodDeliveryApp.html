@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-row">
+            <h1 class="logo">Foodie</h1>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#restaurants">Restaurants</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-buttons">
+                <a href="#" class="btn btn-outline">Login</a>
+                <a href="#" class="btn btn-main">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section id="hero">
+            <div class="container hero-row">
+                <div class="hero-text">
+                    <h2>Delicious food delivered to you</h2>
+                    <p>Order from the best restaurants in your city. Fast, hot and tasty.</p>
+
+                    <form class="hero-form">
+                        <label for="location" class="sr-only">Location</label>
+                        <input type="text" id="location" placeholder="Enter your location" required>
+
+                        <label for="type" class="sr-only">Category</label>
+                        <select id="type">
+                            <option>All categories</option>
+                            <option>Pizza</option>
+                            <option>Burgers</option>
+                            <option>Sushi</option>
+                        </select>
+
+                        <button type="submit" class="btn btn-main">Search</button>
+                    </form>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/hero-food.jpg" alt="Different food dishes on a table">
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories section -->
+        <section id="categories">
+            <div class="container">
+                <h2>Browse by category</h2>
+
+                <div class="category-grid">
+                    <div class="category-card">Pizza</div>
+                    <div class="category-card">Burgers</div>
+                    <div class="category-card">Sushi</div>
+                    <div class="category-card">Indian</div>
+                    <div class="category-card">Chinese</div>
+                    <div class="category-card">Desserts</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurants section -->
+        <section id="restaurants">
+            <div class="container">
+                <h2>Featured restaurants</h2>
+
+                <div class="restaurant-grid">
+                    <article class="restaurant-card">
+                        <img src="PizzaPalace.png" alt="Pizza Palace restaurant">
+                        <h3>Pizza Palace</h3>
+                        <p>Pizza, Italian • 30–40 min • ⭐ 4.8</p>
+                    </article>
+
+                    <article class="restaurant-card">
+                        <img src="BurgerHub.png" alt="Burger Hub restaurant">
+                        <h3>Burger Hub</h3>
+                        <p>Burgers, Fast Food • 20–30 min • ⭐ 4.6</p>
+                    </article>
+
+                    <article class="restaurant-card">
+                        <img src="SushiWorld.png" alt="Sushi World restaurant">
+                        <h3>Sushi World</h3>
+                        <p>Sushi, Japanese • 35–45 min • ⭐ 4.7</p>
+                    </article>
+
+                    <article class="restaurant-card">
+                        <img src="TheSpiceRoute.png" alt="Spice Route restaurant">
+                        <h3>Spice Route</h3>
+                        <p>Indian, Curry • 25–35 min • ⭐ 4.5</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact form -->
+        <section id="contact">
+            <div class="container contact-row">
+                <div>
+                    <h2>Contact us</h2>
+                    <p>Have a question or want to partner with us? Send a message.</p>
+                </div>
+
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4"></textarea>
+
+                    <button type="submit" class="btn btn-main">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-row">
+            <p>&copy; 2025 Foodie. All rights reserved.</p>
+            <ul class="nav-list">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
